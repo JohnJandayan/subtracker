@@ -6,6 +6,7 @@ import axios, { isAxiosError } from 'axios';
 import { Container, Typography, TextField, Button, Box } from '@mui/material';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Providers from '../providers';
 
 export default function Signup() {
   const [email, setEmail] = useState('');
@@ -29,7 +30,7 @@ export default function Signup() {
   };
 
   return (
-    <>
+    <Providers>
       <Header />
       <Container maxWidth="xs" sx={{ mt: 8, flexGrow: 1 }}>
         <Typography variant="h4" gutterBottom>
@@ -45,6 +46,6 @@ export default function Signup() {
         </Box>
       </Container>
       <Footer />
-    </>
+    </Providers>
   );
 }

@@ -3,10 +3,11 @@
 import { Container, Typography, Box } from '@mui/material';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Providers from '../providers';
 
 export default function TermsOfService() {
   return (
-    <>
+    <Providers>
       <Header />
       <Container maxWidth="md" sx={{ mt: 4, mb: 4, flexGrow: 1 }}>
         <Typography variant="h4" gutterBottom>
@@ -95,6 +96,6 @@ export default function TermsOfService() {
         </Box>
       </Container>
       <Footer />
-    </>
+    </Providers>
   );
 }

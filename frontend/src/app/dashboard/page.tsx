@@ -11,6 +11,7 @@ import TotalsCalculator from '@/components/TotalsCalculator';
 import { Subscription } from '@/types';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Providers from '../providers';
 
 export default function Dashboard() {
   const [subscriptions, setSubscriptions] = useState<Subscription[]>([]);
@@ -51,17 +52,17 @@ export default function Dashboard() {
   };
 
   if (loading) return (
-    <>
+    <Providers>
       <Header />
       <Container sx={{ mt: 4, flexGrow: 1 }}>
         <Typography>Loading...</Typography>
       </Container>
       <Footer />
-    </>
+    </Providers>
   );
 
   return (
-    <>
+    <Providers>
       <Header />
       <Container sx={{ mt: 4, flexGrow: 1 }}>
         <Typography variant="h4" gutterBottom>
@@ -75,6 +76,6 @@ export default function Dashboard() {
         <TotalsCalculator subscriptions={subscriptions} />
       </Container>
       <Footer />
-    </>
+    </Providers>
   );
 }

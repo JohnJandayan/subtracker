@@ -4,10 +4,11 @@ import Link from 'next/link';
 import { Container, Typography, Button, Box } from '@mui/material';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Providers from './providers';
 
 export default function Home() {
   return (
-    <>
+    <Providers>
       <Header />
       <Container maxWidth="sm" sx={{ textAlign: 'center', mt: 8, flexGrow: 1 }}>
         <Typography variant="h2" gutterBottom>
@@ -26,6 +27,6 @@ export default function Home() {
         </Box>
       </Container>
       <Footer />
-    </>
+    </Providers>
   );
 }
