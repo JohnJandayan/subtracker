@@ -1,8 +1,8 @@
 # Subtracker
 
-![JavaScript](https://img.shields.io/badge/C--It-JavaScript-blue?style=for-the-badge&logo=javascript)
-![CSS](https://img.shields.io/badge/C--It-CSS-blue?style=for-the-badge&logo=css3)
-![Subtracker Logo](https://img.shields.io/badge/Subtracker-grey?style=for-the-badge&logo=typescript)
+![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?style=for-the-badge&logo=javascript)
+![CSS](https://img.shields.io/badge/-CSS-purple?style=for-the-badge&logo=css3)
+![TypeScript](https://img.shields.io/badge/-TypeScript-blue?style=for-the-badge&logo=typescript)
 
 ## Description
 
