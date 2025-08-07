@@ -1,5 +1,7 @@
 # Subtracker
 
+![Subtracker Logo](https://img.shields.io/badge/C--It-Algorithm%20Visualizer-blue?style=for-the-badge&logo=typescript)
+
 ## Description
 
 Subtracker is a modern subscription tracking application designed to help users manage their recurring subscriptions to services such as Netflix, Azure, and more. It combines the functionality of a calendar and calculator, featuring a Gantt chart for visualizing subscription costs on a monthly and annual basis, along with total calculations. Users can create personal accounts to securely store and separate their data in a database.

@@ -17,7 +17,7 @@ export default function Signup() {
       const res = await axios.post('/api/auth/signup', { email, password });
       localStorage.setItem('token', res.data.session.access_token);
       router.push('/dashboard');
-    } catch (err: any) {
+    } catch (err: unknown) {
       setError(err.response?.data?.error || 'Signup failed');
     }
   };

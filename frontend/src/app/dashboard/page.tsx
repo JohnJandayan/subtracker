@@ -8,14 +8,7 @@ import SubscriptionForm from '@/components/SubscriptionForm';
 import SubscriptionList from '@/components/SubscriptionList';
 import GanttChart from '@/components/GanttChart';
 import TotalsCalculator from '@/components/TotalsCalculator';
-
-interface Subscription {
-  id: string;
-  service_name: string;
-  cost: number;
-  billing_cycle: 'monthly' | 'yearly';
-  start_date: string;
-}
+import { Subscription } from '@/types';
 
 export default function Dashboard() {
   const [subscriptions, setSubscriptions] = useState<Subscription[]>([]);

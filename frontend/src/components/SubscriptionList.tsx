@@ -4,10 +4,11 @@ import { useState } from 'react';
 import axios from 'axios';
 import { Table, TableBody, TableCell, TableHead, TableRow, Button, Box } from '@mui/material';
 import SubscriptionForm from './SubscriptionForm'; // For editing, but simplified
+import { Subscription } from '@/types';
 
 interface SubscriptionListProps {
-  subscriptions: any[];
-  onUpdate: (sub: any) => void;
+  subscriptions: Subscription[];
+  onUpdate: (sub: Subscription) => void;
   onDelete: (id: string) => void;
 }
 
@@ -25,7 +26,7 @@ export default function SubscriptionList({ subscriptions, onUpdate, onDelete }: 
   };
 
   // For simplicity, edit uses same form, but in real would have edit mode
-  const handleUpdate = (updatedSub: any) => {
+  const handleUpdate = (updatedSub: Subscription) => {
     onUpdate(updatedSub);
     setEditingId(null);
   };

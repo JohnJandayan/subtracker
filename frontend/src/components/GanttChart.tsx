@@ -1,7 +1,8 @@
 import Chart from 'react-google-charts';
+import { Subscription } from '@/types';
 
 interface GanttChartProps {
-  subscriptions: any[];
+  subscriptions: Subscription[];
 }
 
 export default function GanttChart({ subscriptions }: GanttChartProps) {

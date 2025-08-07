@@ -1,7 +1,8 @@
 import { Typography, Box } from '@mui/material';
+import { Subscription } from '@/types';
 
 interface TotalsCalculatorProps {
-  subscriptions: any[];
+  subscriptions: Subscription[];
 }
 
 export default function TotalsCalculator({ subscriptions }: TotalsCalculatorProps) {

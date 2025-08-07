@@ -6,11 +6,12 @@ import { TextField, Select, MenuItem, Button, FormControl, InputLabel, Box } fro
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import { Subscription } from '@/types';
 
 interface SubscriptionFormProps {
-  onAdd?: (sub: any) => void;
-  subToEdit?: any;
-  onUpdate?: (sub: any) => void;
+  onAdd?: (sub: Subscription) => void;
+  subToEdit?: Subscription;
+  onUpdate?: (sub: Subscription) => void;
   onClose?: () => void;
 }
 
