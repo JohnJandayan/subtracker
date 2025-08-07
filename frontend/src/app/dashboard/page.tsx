@@ -26,7 +26,7 @@ export default function Dashboard() {
       try {
         const res = await axios.get('/api/subscriptions', { headers: { Authorization: `Bearer ${token}` } });
         setSubscriptions(res.data);
-      } catch (err) {
+      } catch (err: unknown) {
         console.error(err);
       } finally {
         setLoading(false);

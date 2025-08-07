@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import axios from 'axios';
+import axios, { isAxiosError } from 'axios';
 import { Container, Typography, TextField, Button, Box } from '@mui/material';
 
 export default function Signup() {
@@ -18,7 +18,11 @@ export default function Signup() {
       localStorage.setItem('token', res.data.session.access_token);
       router.push('/dashboard');
     } catch (err: unknown) {
-      setError(err.response?.data?.error || 'Signup failed');
+      if (isAxiosError(err)) {
+        setError(err.response?.data?.error || 'Signup failed');
+      } else {
+        setError('An unexpected error occurred');
+      }
     }
   };
 

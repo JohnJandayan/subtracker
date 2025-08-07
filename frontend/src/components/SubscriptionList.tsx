@@ -20,7 +20,7 @@ export default function SubscriptionList({ subscriptions, onUpdate, onDelete }: 
     try {
       await axios.delete(`/api/subscriptions/${id}`, { headers: { Authorization: `Bearer ${token}` } });
       onDelete(id);
-    } catch (err) {
+    } catch (err: unknown) {
       console.error(err);
     }
   };

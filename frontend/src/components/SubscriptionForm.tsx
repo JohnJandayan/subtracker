@@ -44,7 +44,7 @@ export default function SubscriptionForm({ onAdd, subToEdit, onUpdate, onClose }
       setCost(0);
       setBillingCycle('monthly');
       setStartDate(new Date());
-    } catch (err) {
+    } catch (err: unknown) {
       console.error(err);
     }
   };
