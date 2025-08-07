@@ -1,6 +1,8 @@
 # Subtracker
 
-![Subtracker Logo](https://img.shields.io/badge/C--It-Algorithm%20Visualizer-blue?style=for-the-badge&logo=typescript)
+![JavaScript](https://img.shields.io/badge/C--It-JavaScript-blue?style=for-the-badge&logo=javascript)
+![CSS](https://img.shields.io/badge/C--It-CSS-blue?style=for-the-badge&logo=css3)
+![Subtracker Logo](https://img.shields.io/badge/Subtracker-grey?style=for-the-badge&logo=typescript)
 
 ## Description
 
