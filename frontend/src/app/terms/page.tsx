@@ -66,7 +66,7 @@ export default function TermsOfService() {
             7. Disclaimer of Warranties
           </Typography>
           <Typography paragraph>
-            The service is provided "as is" without warranties of any kind, either express or implied. We do not warrant that the service will be uninterrupted or error-free.
+            The service is provided &ldquo;as is&rdquo; without warranties of any kind, either express or implied. We do not warrant that the service will be uninterrupted or error-free.
           </Typography>
           
           <Typography variant="h5" gutterBottom>

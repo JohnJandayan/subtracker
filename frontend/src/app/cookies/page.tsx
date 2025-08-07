@@ -56,7 +56,7 @@ export default function CookiePolicy() {
             5. Managing Cookies
           </Typography>
           <Typography paragraph>
-            Most browsers allow you to refuse to accept cookies and to delete cookies. The methods for doing so vary from browser to browser. Please refer to your browser's help documentation for information on how to manage cookies.
+            Most browsers allow you to refuse to accept cookies and to delete cookies. The methods for doing so vary from browser to browser. Please refer to your browser&apos;s help documentation for information on how to manage cookies.
           </Typography>
           <Typography paragraph>
             Please note that blocking cookies may impact your experience on our website and may limit your ability to use certain features.

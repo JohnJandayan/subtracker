@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
             1. Introduction
           </Typography>
           <Typography paragraph>
-            This Privacy Policy explains how Subtracker ("we," "us," or "our") collects, uses, and shares your personal information when you use our subscription tracking service.
+            This Privacy Policy explains how Subtracker (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) collects, uses, and shares your personal information when you use our subscription tracking service.
           </Typography>
           
           <Typography variant="h5" gutterBottom>
