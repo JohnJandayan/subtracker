@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import axios, { isAxiosError } from 'axios';
 import { Container, Typography, TextField, Button, Box } from '@mui/material';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -27,18 +29,22 @@ export default function Login() {
   };
 
   return (
-    <Container maxWidth="xs" sx={{ mt: 8 }}>
-      <Typography variant="h4" gutterBottom>
-        Login
-      </Typography>
-      <Box component="form" onSubmit={handleSubmit} sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-        <TextField label="Email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-        <TextField label="Password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-        {error && <Typography color="error">{error}</Typography>}
-        <Button type="submit" variant="contained" color="primary">
+    <>
+      <Header />
+      <Container maxWidth="xs" sx={{ mt: 8, flexGrow: 1 }}>
+        <Typography variant="h4" gutterBottom>
           Login
-        </Button>
-      </Box>
-    </Container>
+        </Typography>
+        <Box component="form" onSubmit={handleSubmit} sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+          <TextField label="Email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+          <TextField label="Password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+          {error && <Typography color="error">{error}</Typography>}
+          <Button type="submit" variant="contained" color="primary">
+            Login
+          </Button>
+        </Box>
+      </Container>
+      <Footer />
+    </>
   );
 }

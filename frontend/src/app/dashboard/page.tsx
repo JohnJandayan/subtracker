@@ -3,12 +3,14 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import axios from 'axios';
-import { Container, Typography, Button, Box } from '@mui/material';
+import { Container, Typography, Box } from '@mui/material';
 import SubscriptionForm from '@/components/SubscriptionForm';
 import SubscriptionList from '@/components/SubscriptionList';
 import GanttChart from '@/components/GanttChart';
 import TotalsCalculator from '@/components/TotalsCalculator';
 import { Subscription } from '@/types';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export default function Dashboard() {
   const [subscriptions, setSubscriptions] = useState<Subscription[]>([]);
@@ -48,22 +50,31 @@ export default function Dashboard() {
     setSubscriptions(subscriptions.filter(sub => sub.id !== id));
   };
 
-  if (loading) return <Typography>Loading...</Typography>;
+  if (loading) return (
+    <>
+      <Header />
+      <Container sx={{ mt: 4, flexGrow: 1 }}>
+        <Typography>Loading...</Typography>
+      </Container>
+      <Footer />
+    </>
+  );
 
   return (
-    <Container sx={{ mt: 4 }}>
-      <Typography variant="h4" gutterBottom>
-        Dashboard
-      </Typography>
-      <Button onClick={() => { localStorage.removeItem('token'); router.push('/login'); }} variant="outlined" color="secondary">
-        Logout
-      </Button>
-      <Box sx={{ my: 4 }}>
-        <SubscriptionForm onAdd={addSubscription} />
-      </Box>
-      <SubscriptionList subscriptions={subscriptions} onUpdate={updateSubscription} onDelete={deleteSubscription} />
-      <GanttChart subscriptions={subscriptions} />
-      <TotalsCalculator subscriptions={subscriptions} />
-    </Container>
+    <>
+      <Header />
+      <Container sx={{ mt: 4, flexGrow: 1 }}>
+        <Typography variant="h4" gutterBottom>
+          Dashboard
+        </Typography>
+        <Box sx={{ my: 4 }}>
+          <SubscriptionForm onAdd={addSubscription} />
+        </Box>
+        <SubscriptionList subscriptions={subscriptions} onUpdate={updateSubscription} onDelete={deleteSubscription} />
+        <GanttChart subscriptions={subscriptions} />
+        <TotalsCalculator subscriptions={subscriptions} />
+      </Container>
+      <Footer />
+    </>
   );
 }

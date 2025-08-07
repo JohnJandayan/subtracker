@@ -1,3 +1,5 @@
+'use client';
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@mui/material/styles";
@@ -22,7 +24,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider theme={theme}>
           <CssBaseline />
-          {children}
+          <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>
