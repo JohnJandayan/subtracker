@@ -1,14 +1,12 @@
 # Subtracker
+Subtracker is a modern subscription tracking application designed to help users manage their recurring subscriptions to services such as Netflix, Azure, and more. It combines the functionality of a calendar and calculator, featuring a Gantt chart for visualizing subscription costs on a monthly and annual basis, along with total calculations. Users can create personal accounts to securely store and separate their data in a database.
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript&labelColor=grey)
 ![CSS](https://img.shields.io/badge/CSS-indigo?style=for-the-badge&logo=css&labelColor=grey)
 ![TypeScript](https://img.shields.io/badge/TypeScript-blue?style=for-the-badge&logo=typescript&labelColor=grey)
 
-## Description
 
-Subtracker is a modern subscription tracking application designed to help users manage their recurring subscriptions to services such as Netflix, Azure, and more. It combines the functionality of a calendar and calculator, featuring a Gantt chart for visualizing subscription costs on a monthly and annual basis, along with total calculations. Users can create personal accounts to securely store and separate their data in a database.
-
-## Features
+## 🌟 Features
 
 - **Subscription Management**: Add, edit, and remove subscriptions with details like service name, cost, billing cycle, and start date.
 - **Cost Visualization**: Interactive Gantt chart displaying subscription timelines and costs.
@@ -16,17 +14,17 @@ Subtracker is a modern subscription tracking application designed to help users 
 - **User Accounts**: Secure authentication to keep user data private and persistent.
 - **Responsive Design**: Modern, elegant UI/UX that is user-friendly and accessible on all devices.
 
-## Tech Stack
+## 🛠️ Technology Stack
 
 - **Frontend**: Next.js (React framework for server-side rendering and static site generation)
 - **Backend**: Express.js (deployed serverless on Vercel for API endpoints)
 - **Database**: PostgreSQL managed via Supabase
 
-## Design Principles
+## 🎨 Design Principles
 
 The application follows a modern, elegant, and pleasing UI/UX design that prioritizes simplicity and intuitiveness, making it accessible for users of all ages and technical expertise. It is fully responsive, ensuring a seamless experience across desktops, tablets, and mobile devices.
 
-## Hosting
+## 🚀 Hosting
 
 The application is hosted using serverless architecture for scalability and cost-efficiency:
 
@@ -75,8 +73,11 @@ This project adheres to best software engineering practices, including:
 5. Set up Supabase database: Create 'subscriptions' table with columns: id (uuid), user_id (uuid), service_name (text), cost (numeric), billing_cycle (text), start_date (timestamp).
 6. Deploy to Vercel and Supabase as configured above.
 
-## About the Developer
 
-Developed by John Jandayan, a passionate developer with expertise in React and Django for web development. I also specialize in Python, C, and SQL. With a keen eye for design and a commitment to writing clean, efficient code, I desire to create and amplify memorable user experiences.
+## 📝 License
 
-Currently serving as the Caraga State University - Computer Science Society President for Academic Year 2025-2026, I'm focused on building accessible and helpful projects that make learning programming accessible to everyone. [https://portfolio-john-jandayan.vercel.app/](https://portfolio-john-jandayan.vercel.app/)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**Built with ❤️ by John Jandayan**
+
+*Subtracker: Tracking your Burdens* 
